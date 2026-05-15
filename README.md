@@ -15,7 +15,8 @@ Issue 作成時にテンプレートを選択することで、記載内容を�
 | [bug](/.github/ISSUE_TEMPLATE/bug.md) | 不具合の報告 |
 | [enhancement](/.github/ISSUE_TEMPLATE/enhancement.md) | 機能改善 |
 | [feature](/.github/ISSUE_TEMPLATE/feature.md) | 新機能開発 |
-| [chore](/.github/ISSUE_TEMPLATE/chore.md) | リファクタリング・依存更新・環境整備など |
+| [chore](/.github/ISSUE_TEMPLATE/chore.md) | 依存更新・ビルド設定・CI/CD など保守作業 |
+| [refactor](/.github/ISSUE_TEMPLATE/refactor.md) | 外部の振る舞いを変えないコードの内部整理 |
 | [documentation](/.github/ISSUE_TEMPLATE/documentation.md) | ドキュメントの改善・追加 |
 | [question](/.github/ISSUE_TEMPLATE/question.md) | チーム内の相談・要件整理 |
 | [test](/.github/ISSUE_TEMPLATE/test.md) | 動作確認・テスト |

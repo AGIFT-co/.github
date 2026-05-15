@@ -1,6 +1,6 @@
 ---
 name: Chore
-about: リファクタリング・依存更新・環境整備など
+about: 依存更新・ビルド設定・CI/CD など保守作業
 labels: chore
 ---
 
