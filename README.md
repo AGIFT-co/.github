@@ -25,8 +25,6 @@ Issue 作成時にテンプレートを選択することで、記載内容を�
 > 空白の Issue 作成は無効化しています（`blank_issues_enabled: false`）。
 > 必ずいずれかのテンプレートを選択してください。
 
-## 関連リポジトリ
+## セキュリティ
 
-| リポジトリ | 説明 |
-|---|---|
-| [AGIFT-co/dotfiles](https://github.com/AGIFT-co/dotfiles) | 全社共通の開発ツール設定（Claude Code スキルなど） |
+脆弱性の報告方法は [SECURITY.md](SECURITY.md) を参照してください。
