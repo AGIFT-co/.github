@@ -114,6 +114,10 @@ scripts/board-list.sh "assignee:@me"  # 追加フィルタは引数で渡す（�
 | `scripts/board-close-done.sh` | Status=Done かつ open の Issue を close（冪等） |
 | `scripts/board-archive-done.sh` | Status=Done 項目の一括アーカイブ（全体 Weekly 冒頭） |
 
+CLI は `gh`（GitHub 公式 CLI）を標準とする。
+JSON 加工は `gh` 内蔵の `--jq` フラグを使い、外部コマンド `jq` へ依存しない。
+`--jq` で表現しにくい複雑な加工は `python3` で行う。
+
 スクリプトの対象は、省略時は adServer project（AGIFT-co No.2）とする。
 別プロジェクトを対象にする場合は環境変数 `BOARD_PROJECT_NUMBER` と `BOARD_OWNER` で指定する。
 前提として、対象プロジェクトは Status フィールド（Backlog / Ready / In progress / Review / Done）を持つこと。
