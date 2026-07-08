@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# adServer project (AGIFT-co No.2) の作業対象一覧を取得する。
+# 対象プロジェクト（BOARD_PROJECT_NUMBER/BOARD_OWNER）の作業対象一覧を取得する。
 # 運用ルール（docs/github-operation.md「Issue 一覧の取得」）に従い Status=Done を除外する。
 # 使い方: board-list.sh [追加クエリ]
 #   例: board-list.sh "assignee:@me"

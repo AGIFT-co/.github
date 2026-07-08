@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 全体 Weekly 冒頭の運用: adServer project (AGIFT-co No.2) の Status=Done 項目を全件アーカイブする。
+# 全体 Weekly 冒頭の運用: 対象プロジェクトの Status=Done 項目を全件アーカイブする。
 # アーカイブ前に board-close-done.sh を実行し、close の整合を取ってから使うこと。
 # アーカイブは削除ではない。Project 設定の Archived items ページから復元できる。
 set -euo pipefail

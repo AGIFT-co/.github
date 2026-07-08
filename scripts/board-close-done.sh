@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 不変条件「Status=Done の Issue は closed である」を回復する（冪等）。
-# adServer project (AGIFT-co No.2) で Status=Done かつ open の Issue を全件 close する。
+# 対象プロジェクトで Status=Done かつ open の Issue を全件 close する。
 # Done への移動と close は運用中のデーモンが行うため、本スクリプトは取りこぼし時の手動回復用。
 set -euo pipefail
 cd "$(dirname "$0")"

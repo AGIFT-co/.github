@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Issue を対象プロジェクト（省略時は adServer project）に追加し、Status=Backlog を設定する。
+# Issue を対象プロジェクト（BOARD_PROJECT_NUMBER/BOARD_OWNER で指定）に追加し、Status=Backlog を設定する。
 # gh issue create はボードへ自動追加されないため、起票後は本スクリプトで追加する。
 # 使い方: board-add.sh <issue-url>
 set -euo pipefail

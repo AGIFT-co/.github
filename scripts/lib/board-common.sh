@@ -2,12 +2,27 @@
 # board-*.sh の共通ヘルパー。単体では実行せず、各スクリプトから source する。
 # 依存: gh / python3
 #
-# 対象プロジェクトは環境変数で指定できる（省略時は adServer project）。
-#   BOARD_PROJECT_NUMBER=5 BOARD_OWNER=AGIFT-co board-list.sh
+# 対象プロジェクトは環境変数で指定する（必須。製品固有の既定値は持たない）。
+#   BOARD_OWNER=<所有者> は必須。
+#   対象 Project は BOARD_PROJECT_TITLE=<タイトル>（推奨）または BOARD_PROJECT_NUMBER=<番号> で指定する。
+#   タイトル指定時は番号を実行時に解決するため、設定にマジックナンバー（番号）を置かずに済む。
+#   例: BOARD_OWNER=<所有者> BOARD_PROJECT_TITLE="<プロジェクト名>" board-list.sh
 # 前提: 対象プロジェクトが Status フィールド（Backlog/Ready/In progress/Review/Done）を持つこと。
 
-BOARD_PROJECT_NUMBER="${BOARD_PROJECT_NUMBER:-2}"
-BOARD_OWNER="${BOARD_OWNER:-AGIFT-co}"
+BOARD_OWNER="${BOARD_OWNER:?BOARD_OWNER を環境変数で指定すること（Project の所有者。組織名またはユーザー名）}"
+
+# 対象 Project 番号を確定する。BOARD_PROJECT_NUMBER を優先し、無ければ BOARD_PROJECT_TITLE から解決する。
+if [ -z "${BOARD_PROJECT_NUMBER:-}" ]; then
+  if [ -n "${BOARD_PROJECT_TITLE:-}" ]; then
+    BOARD_PROJECT_NUMBER="$(gh project list --owner "$BOARD_OWNER" --format json --limit 100 \
+      --jq ".projects[] | select(.title == \"$BOARD_PROJECT_TITLE\") | .number" | head -n1)"
+    [ -n "$BOARD_PROJECT_NUMBER" ] \
+      || { echo "error: タイトルに一致する Project が見つからない: '${BOARD_PROJECT_TITLE}'（owner=${BOARD_OWNER}）" >&2; exit 1; }
+  else
+    echo "error: 対象 Project を BOARD_PROJECT_TITLE（推奨）か BOARD_PROJECT_NUMBER で指定すること" >&2
+    exit 1
+  fi
+fi
 
 board_die() {
   echo "error: $*" >&2
