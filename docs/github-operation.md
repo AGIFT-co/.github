@@ -1,7 +1,7 @@
 # GitHub 運用ルール
 
 本書は AGIFT-co 組織の各リポジトリに共通する、GitHub Issue と Projects の運用ルールを定める。
-ブランチ戦略・コミット規約はリポジトリ固有の規約（各リポジトリの `.claude/rules/git-workflow.md` 等）に従う。
+ブランチ戦略・コミット規約は組織共通規約 [git-workflow.md](git-workflow.md) に従う。
 
 ## Issue テンプレート
 
