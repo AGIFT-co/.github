@@ -1,6 +1,6 @@
 ---
 name: Feature
-about: 新機能開発
+about: 新機能の開発
 labels: feature
 ---
 

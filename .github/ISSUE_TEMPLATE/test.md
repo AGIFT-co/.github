@@ -1,6 +1,6 @@
 ---
 name: Test
-about: 動作確認・テスト
+about: 動作確認・テストの追加
 labels: test
 ---
 

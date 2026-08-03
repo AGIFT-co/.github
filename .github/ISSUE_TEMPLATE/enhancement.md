@@ -1,6 +1,6 @@
 ---
 name: Enhancement
-about: 機能改善
+about: 既存機能の改善
 labels: enhancement
 ---
 

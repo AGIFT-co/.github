@@ -1,6 +1,6 @@
 ---
 name: Bug
-about: 不具合の報告
+about: 予期しない動作・不具合の報告
 labels: bug
 ---
 

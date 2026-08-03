@@ -1,6 +1,6 @@
 ---
 name: Question
-about: チーム内の相談・要件整理
+about: 確認・相談・ディスカッション
 labels: question
 ---
 
