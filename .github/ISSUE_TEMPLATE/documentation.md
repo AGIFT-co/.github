@@ -2,7 +2,7 @@
 name: Documentation
 about: ドキュメントの改善・追加
 title: "[documentation] "
-labels: documentation
+type: Documentation
 ---
 
 ## 概要

@@ -2,7 +2,7 @@
 name: Refactor
 about: 外部の振る舞いを変えないコードの内部整理
 title: "[refactor] "
-labels: refactor
+type: Refactor
 ---
 
 ## 概要

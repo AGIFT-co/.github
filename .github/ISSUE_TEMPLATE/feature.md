@@ -2,7 +2,7 @@
 name: Feature
 about: 新機能の開発
 title: "[feature] "
-labels: feature
+type: Feature
 ---
 
 <!-- 使い分け: その機能がまだ存在せずゼロから作る場合は Feature。

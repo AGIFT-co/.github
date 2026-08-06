@@ -2,7 +2,7 @@
 name: Question
 about: 確認・相談・ディスカッション
 title: "[question] "
-labels: question
+type: Question
 ---
 
 ## 概要
