@@ -1,8 +1,8 @@
 ---
 name: Bug
-about: 予期しない動作・不具合の報告
+about: プロダクトの不具合の報告（仕様どおり動かない、または放置すると損害を招く）
 title: "[bug] "
-labels: bug
+type: Bug
 ---
 
 ## 概要

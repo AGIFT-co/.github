@@ -2,7 +2,7 @@
 name: Test
 about: 動作確認・テストの追加
 title: "[test] "
-labels: test
+type: Test
 ---
 
 ## 概要

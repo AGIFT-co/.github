@@ -1,13 +1,14 @@
 ---
 name: Enhancement
-about: 既存機能の改善
+about: 既存機能の改善（正しく動いているものをより良くする）
 title: "[enhancement] "
-labels: enhancement
+type: Enhancement
 ---
 
 <!-- 使い分け: 既に動いている機能の挙動・UI・性能を変える場合は Enhancement。
      その機能がまだ存在せずゼロから作る場合は Feature を使ってください。
-     迷ったら「今それができるか？」で判定する（できるが不満がある → Enhancement）。 -->
+     迷ったら「今それができるか？」で判定する（できるが不満がある → Enhancement）。
+     壊れている、または放置すると損害が出るものは Bug を使ってください。 -->
 
 ## 概要
 <!-- 何を改善するかを 1〜2 文で -->
